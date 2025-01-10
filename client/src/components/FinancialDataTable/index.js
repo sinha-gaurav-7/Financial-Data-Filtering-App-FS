@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 // Backend API URL to fetch data
-const API_URL = "http://localhost:5000/api/data"; 
+const API_URL = "http://54.172.85.140:5000/api/data"; 
+// const API_URL = "http://127.0.0.1:5000/api/data"; 
 
 const FinancialDataTable = () => {
   
