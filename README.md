@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Financial Data Filtering App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The **Financial Data Filtering App** is a responsive web application that allows users to fetch, filter, and analyze financial data for Apple Inc. The app leverages the Financial Modeling Prep API to display key financial metrics like revenue, net income, and more. Users can filter data by date, revenue, and net income ranges and sort it in ascending or descending order. The application is built using React, Python Flask, styled using TailwindCSS, and hosted using AWS.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## **Features**
 
-### `npm start`
+- Fetch annual income statements for Apple Inc. from the https://site.financialmodelingprep.com/developer/docs#income-statements-financial-statements.
+- Filter data by:
+  - Date range
+  - Revenue range
+  - Net income range
+- Sort data by:
+  - Date (ascending/descending)
+  - Revenue (ascending/descending)
+  - Net income (ascending/descending)
+- Responsive design for mobile, tablet, and desktop devices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## **Live Demo**
 
-### `npm test`
+The application is deployed and available at:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- http://54.172.85.140/
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## **Technologies Used**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Frontend**: React, Axios, TailwindCSS
+- **Backend**: Python Flask
+- **API**: https://site.financialmodelingprep.com/developer/docs#income-statements-financial-statements
+- **Hosting**: AWS
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## **Setup and Running the Application**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To set up and run the application locally, follow these instructions:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the Repository**: Clone the repository to your local machine using the following command:
+   - git clone https://github.com/sinha-gaurav-7/Financial-Data-Filtering-App.git
+2. **Navigate to the Backend Folder**: The backend application is located in the server folder.
+   - cd Financial-Data-Filtering-App/server
+3. **Install Dependencies**: Install the required Python packages
+   - pip install -r requirements.txt
+4. **Set Up Environment Variables**: Add any required environment variables to the .env file in the server folder. Refer to the .env.example file for guidance.
+5. **Run the Flask Application**: Start the backend server
+   - python app.py
+6. **Access the Backend**: The backend will be accessible at
+   - http://127.0.0.1:5000/api/data
+7. **Navigate to the Frontend Folder**: The frontend application is located in the client folder.
+   - cd Financial-Data-Filtering-App/client
+8. **Install Dependencies**: Install the required npm packages
+   - npm install
+9. **Run the React Application**: Start the frontend development server
+   - npm start
+10. **Access the Frontend**: The frontend will be accessible at
+    - http://localhost:3000
